@@ -1,5 +1,9 @@
 // increment
-export function increment(index){
+// index tells which item needs to be incremented
+// these functions are called 'actions' 
+// they all need to be exported
+// they will be 'dispatched'
+export function increment(index) {
 	return {
 		type: 'INCREMENT_LIKES',
 		index
