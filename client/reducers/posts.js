@@ -1,7 +1,5 @@
 function posts(state = [], action) 	{
-	console.log( 'posts did an action' )
-	console.log('posts reducer state:', state )
-	console.log('posts reducer action:', action )
+	console.log( 'posts did an action', state, action )
 	return state;
 }
 
