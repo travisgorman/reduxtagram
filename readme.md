@@ -1,5 +1,17 @@
 # Learn Redux
 
+Redux is a predictable state container for JavaScript apps. Use it with React or any view library.
+
+* The whole state of your app is stored in an object tree inside a single **store**.
+* The only way to change the state tree is to dispatch an **action**, an object describing what happened.
+	- instead of mutating the state directly, you specify the mutations with plain objects called actions.
+* To specify how the actions transform the state tree, you write pure **reducers**
+	- special function that decides how every action transforms the entire application's state
+
+## Store
+## Actions
+## Reducers
+
 1. Setting up Webpack Enviornment
 
 
@@ -93,6 +105,16 @@ switch statement in `posts` reducer
 
 
 * Redux Reducer Composition
+
+`Reducer Composition`: this is where you use a switch statement to determine which piece of the state to update
+
+The reducer is a pure function that takes the previous state and an action, and returns the next state.
+
+```js
+(previousState, action) => newState
+```
+
+we never write directly to state or its fields, and instead we return new objects.
 
 
 * Error Tracking and Insights with Sentry
