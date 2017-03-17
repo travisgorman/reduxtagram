@@ -13,9 +13,17 @@ const defaultState = {
 	comments,
 }
 
+const enhancers = compose(  
+  window.devToolsExtension ? window.devToolsExtension() :
+  f => f
+)
+
+
 // create the store with createStore from 'redux'
 // createStore takes the rootReducer and the default state object
-const store = createStore(rootReducer, defaultState)
+
+const store = createStore(rootReducer, defaultState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());﻿
 
 // create and export history with syncHistoryWithStore from 'react-router-redux'
 // syncHistoryWithStore takes browserHistory from 'react-router' and the store
