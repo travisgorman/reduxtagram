@@ -125,10 +125,21 @@ we never write directly to state or its fields, and instead we return new object
 
 * Redux Dev Tools
 
+### sweep
+sweep removes disabled actions from your log as if they never happened
+
+### reset
+resets all actions back to initial state
+
+### revert
+revert anything since your last commit
+
+### commit
+commit log to a single state tree object
 
 * Wrap up and Next Steps
 
-
+thar she blows
 
 ___
 
